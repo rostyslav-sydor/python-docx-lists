@@ -4,7 +4,9 @@
 Provides Python 2/3 compatibility objects
 """
 
-from __future__ import absolute_import, division, print_function, unicode_literals
+from __future__ import (
+    absolute_import, division, print_function, unicode_literals
+)
 
 import sys
 
@@ -27,7 +29,6 @@ if sys.version_info >= (3, 0):
         """
         return isinstance(obj, str)
 
-
 # ===========================================================================
 # Python 2 versions
 # ===========================================================================
@@ -46,4 +47,4 @@ else:
         """
         Return True if *obj* is a string, False otherwise.
         """
-        return isinstance(obj, basestring)  # noqa
+        return isinstance(obj, basestring)
